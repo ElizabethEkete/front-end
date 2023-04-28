@@ -1,0 +1,243 @@
+/* colors:#3E5641, #66c873  #087f5b #d3f9d8 #f08c00, #074450a2*/
+/* background-image: linear-gradient(
+            rgba(34, 34, 34, 0.6),
+            rgba(34, 34, 34, 0.6)
+          ),
+          url(hero.jpg);
+        background-size: cover;
+        color: #fff; */
+
+@import url("https://fonts.googleapis.com/css2?family=Phudu:wght@500&family=Staatliches&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+/* body {
+  
+} */
+.hero-sec {
+  background-image: linear-gradient(to top left, #d3f9d8, #074450a2);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+/* NAVIGATION START */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 136rem;
+  padding: 1.5rem 4.8rem;
+  margin-bottom: 6.5rem;
+}
+.logo {
+  font-size: 4em;
+  color: #074450a2;
+  font-family: "Phudu", cursive;
+}
+.bar-con {
+  display: flex;
+  gap: 2rem;
+}
+.bar {
+  font-size: 1.8em;
+  color: #333;
+  transition: all 0.3s;
+}
+.bar::after {
+  display: block;
+  content: "";
+  width: 0rem;
+  height: 0.5rem;
+  border-radius: 1rem;
+  margin: 0 auto;
+  background-color: #d3f9d8;
+  transition: all 0.3s;
+}
+.bar:hover {
+  color: #d3f9d8;
+}
+.bar:hover::after {
+  background-color: #074450a2;
+  width: 75%;
+}
+
+/* .sign-con {
+ 
+} */
+.s-in {
+  font-size: 1.8em;
+  color: #333;
+  text-decoration: none;
+  margin-right: 1rem;
+  padding: 0.7rem 2.5rem;
+  border-radius: 0.6rem;
+  /* background-color: rgba(151, 144, 144, 0.2); */
+  background-color: #d3f9d8;
+}
+.s-up:link,
+.s-up:visited {
+  font-size: 1.9em;
+  color: #333;
+  text-decoration: none;
+  color: #d3f9d8;
+  margin-right: 1rem;
+  padding: 1rem 3rem;
+  border-radius: 0.6rem;
+  background-color: #074450a2;
+  transition: all 0.4s;
+}
+.s-up:hover {
+  color: #074450a2;
+  background-color: #d3f9d8;
+  /* Trick */
+  box-shadow: inset 0 0 0 3px #074450a2;
+}
+/* NAVIGATION END */
+/* ***************** */
+/* HERO START */
+.hero-des {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3rem;
+  grid-column-gap: 5rem;
+}
+.text-content {
+  margin-top: 4rem;
+}
+.sm-text {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #074450a2;
+}
+.heading-tx {
+  font-size: 3.5rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.1rem;
+}
+.img {
+  width: 100%;
+  height: 100%;
+}
+.hero-tx {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+.btn-con {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.7rem;
+  align-items: center;
+}
+.btn-start {
+  color: #333;
+  padding: 0.7rem 2.5rem;
+  border-radius: 0.6rem;
+  /* background-color: rgba(151, 144, 144, 0.2); */
+  background-color: #d3f9d8;
+}
+.btn-rent {
+  color: #333;
+  color: #d3f9d8;
+  margin-right: 1rem;
+  padding: 1rem 3rem;
+  border-radius: 0.6rem;
+  background-color: #074450a2;
+  transition: all 0.3s;
+}
+.btn-rent:hover {
+  color: #074450a2;
+  background-color: #d3f9d8;
+  /* Trick */
+  box-shadow: inset 0 0 0 3px #074450a2;
+}
+.img-con {
+  border-radius: 0.7rem;
+  overflow: hidden;
+}
+/* HERO END */
+/* **************** */
+/* FEATURES START */
+.featurs-con {
+  max-width: 136rem;
+  padding: 3rem 7.5rem;
+}
+.feat-heading {
+  font-size: 2.7em;
+  color: #333;
+}
+.line-con {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+.li-1 {
+  width: 10rem;
+  height: 0.6rem;
+  background-color: #074450a2;
+  border-radius: 0.5rem;
+}
+.li {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background-color: #074450a2;
+}
+.features {
+  display: grid;
+  max-width: 125rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0 auto;
+  column-gap: 3rem;
+}
+.icon-div {
+  display: block;
+  max-width: 4rem;
+  margin: 0 auto;
+}
+.icon {
+  stroke: #074450a2;
+  fill: #d3f9d8;
+}
+.feat-sub-heading {
+  font-size: 1.8em;
+  text-align: center;
+  color: #333;
+  color: #021e24a2;
+  font-weight: 800;
+  margin-bottom: 0.8rem;
+}
+.feat-text {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+.view-props-link:link,
+.view-props-link:visited {
+  font-size: 1.5rem;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  color: #04313aa2;
+  font-weight: 700;
+}
+.line {
+  max-width: 20rem;
+  height: 0.5rem;
+  background-color: #04313aa2;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+}
+/* FEATURES END */
